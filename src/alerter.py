@@ -22,11 +22,4 @@ class Alerter:
             # let us keep a count of failures to report
             # However, this code doesn't count failures!
             # Add a test below to catch this bug.Alter the stub above,if needed.
-            self.alert_failure_count += 0
-
-
-a = Alerter()
-a.alert_in_celcius(400.5, 'production-environment')
-a.alert_in_celcius(303.6, 'integration-environment')
-print(f'{a.alert_failure_count} alerts failed.')
-print('All is well (maybe!)')
+            self.alert_failure_count += 1
